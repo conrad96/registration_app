@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\CONRAD\\AndroidStudioProjects\\flutter_app\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\xampp\\htdocs\\registration_app\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\CONRAD\\AndroidStudioProjects\\flutter_app\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "C:\\xampp\\htdocs\\registration_app\\android\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
