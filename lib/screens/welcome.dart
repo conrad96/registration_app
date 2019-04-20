@@ -12,7 +12,6 @@ class Welcome extends StatelessWidget
         child: new SplashScreen(
           seconds: 20,
           navigateAfterSeconds: new AfterSplash(),
-          //title: new Text('Welcome'),
           image: new Image.asset('assets/images/my_company.png'),
           backgroundColor: Colors.redAccent.shade200,
           styleTextUnderTheLoader: new TextStyle(),
@@ -20,6 +19,7 @@ class Welcome extends StatelessWidget
           loaderColor: Colors.white
         ),
       ),
+      resizeToAvoidBottomPadding: false
     );
   }
 }
@@ -34,9 +34,8 @@ class AfterSplash extends StatelessWidget {
       ),
       automaticallyImplyLeading: false
       ),
-      body: new Center(
-        child: LoginScreen(),
-      ),
+      body:LoginScreen(),
+      resizeToAvoidBottomPadding: false
     );
   }
 }
