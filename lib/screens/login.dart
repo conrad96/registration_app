@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'create_account.dart';
 
 class LoginScreen extends StatelessWidget
 {
@@ -39,6 +40,16 @@ class LoginForm extends StatelessWidget
                   OutlineInputBorder(borderRadius: BorderRadius.circular(32.0))),
         );
 
+        final createAccount = new GestureDetector(
+          child: new Text(
+            "Create Account",
+            style: TextStyle(decoration: TextDecoration.underline, color: Colors.blue)
+            ),
+          onTap: (){
+            CreateAccount();
+          },
+        );
+
         final loginButon = Material(
           elevation: 5.0,
           borderRadius: BorderRadius.circular(30.0),
@@ -72,6 +83,8 @@ class LoginForm extends StatelessWidget
                     SizedBox(
                       height: 15.0,
                     ),
+                    SizedBox(height: 15.0,),
+                    createAccount,
                     loginButon,
                     SizedBox(
                       height: 15.0,
