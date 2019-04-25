@@ -40,11 +40,19 @@ class LoginForm extends StatelessWidget
                   OutlineInputBorder(borderRadius: BorderRadius.circular(32.0))),
         );
 
-        final createAccount = new GestureDetector(
-          child: new Text(
+        final extra = new GestureDetector(
+          child: Container(
+            child: Row(
+              children: <Widget>[
+                new Text(
             "Create Account",
             style: TextStyle(decoration: TextDecoration.underline, color: Colors.blue)
             ),
+            new Text("Forgit Password",
+            style: TextStyle(decoration: TextDecoration.underline,color: Colors.blue),)
+              ],
+            ),
+          ),
           onTap: (){
             CreateAccount();
           },
@@ -61,7 +69,7 @@ class LoginForm extends StatelessWidget
             child: Text("Login",
                 textAlign: TextAlign.center,
               ),
-          ),
+          ),s
         );
 
         return Scaffold(
@@ -84,7 +92,7 @@ class LoginForm extends StatelessWidget
                       height: 15.0,
                     ),
                     SizedBox(height: 15.0,),
-                    createAccount,
+                    extra,
                     loginButon,
                     SizedBox(
                       height: 15.0,
